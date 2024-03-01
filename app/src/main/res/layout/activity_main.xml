@@ -17,7 +17,7 @@
         android:hint="Digite um número"
         android:inputType="numberDecimal"
         android:maxLength="5"
-        app:layout_constraintBottom_toBottomOf="parente"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
@@ -33,7 +33,7 @@
         android:hint="Digite um número"
         android:inputType="numberDecimal"
         android:maxLength="5"
-        app:layout_constraintBottom_toBottomOf="parente"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
@@ -43,8 +43,8 @@
         android:id="@+id/radio_group"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parente"
-        app:layout_constraintTop_toTopOf="parente"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         tools:layout_editor_absoluteX="27dp"
         tools:layout_editor_absoluteY="245dp">
 
@@ -80,9 +80,9 @@
         android:layout_height="wrap_content"
         android:text="Resultado: "
         android:textAlignment="center"
-        app:layout_constraintEnd_toEndOf="parente"
-        app:layout_constraintStart_toStartOf="parente"
-        app:layout_constraintTop_toTopOf="parente"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         tools:layout_editor_absoluteX="111dp"
         tools:layout_editor_absoluteY="459dp" />
 
@@ -93,11 +93,11 @@
         android:text="CALCULADORA"
         android:textSize="15dp"
         android:layout_marginTop="10pt"
-        app:layout_constraintBottom_toBottomOf="parente"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.472"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parente" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button_calcular"
@@ -105,9 +105,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="CALCULAR"
-        app:layout_constraintEnd_toEndOf="parente"
-        app:layout_constraintStart_toStartOf="parente"
-        app:layout_constraintTop_toTopOf="parente"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         tools:layout_editor_absoluteX="146dp"
         tools:layout_editor_absoluteY="513dp" />
 

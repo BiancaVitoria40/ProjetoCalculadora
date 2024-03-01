@@ -23,31 +23,28 @@ class MainActivity : AppCompatActivity() {
         resultadoTextView = findViewById(R.id.text_view_selected)
 
 
-        binding.radioGroup.setOnCheckedChangeListener{ _, checkedId ->
-            when(checkedId){
-                binding.radioSoma.id -> {
-                    performSoma()
+        binding.buttonCalcular.setOnClickListener{
+            binding.radioGroup.setOnCheckedChangeListener{ _, checkedId ->
+                when(checkedId){
+                    binding.radioSoma.id -> {
+                        performSoma()
 
-                }
-                binding.radioSubtracao.id -> {
-                    performSubtracao()
-                }
-                binding.radioMultiplicacao.id -> {
-                    performMultiplicacao()
-                }
-                else -> {
-                    performDivisao()
+                    }
+                    binding.radioSubtracao.id -> {
+                        performSubtracao()
+                    }
+                    binding.radioMultiplicacao.id -> {
+                        performMultiplicacao()
+                    }
+                    else -> {
+                        performDivisao()
+
+                    }
 
                 }
 
             }
 
-        }
-
-        binding.buttonCalcular.setOnClickListener{
-            val n = binding.editText2.text.toString().toFloat()
-            Toast.makeText(this, n.toString(), Toast.LENGTH_SHORT).show()
-            binding.editText2.setText((n*-1).toString())
         }
 
     }
